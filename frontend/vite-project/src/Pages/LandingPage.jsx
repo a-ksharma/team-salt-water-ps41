@@ -5,6 +5,8 @@ import { FiArrowRight } from "react-icons/fi";
 import {useNavigate} from "react-router-dom";
 import {Chart as ChartJS,ArcElement,Tooltip,Legend} from "chart.js/auto";
 import ChartDataLabels from "chartjs-plugin-datalabels";
+import Whale from "../assets/Whale.png";
+import Crab from "../assets/Crab.png";
 
 import {Bar,Doughnut} from "react-chartjs-2";
 ChartJS.register(ArcElement,Tooltip,Legend, ChartDataLabels);
@@ -40,7 +42,7 @@ const LandingPage=()=>{
 
         </div>
         <div className="home-image-container">
-          <img src="src/assets/Whale.png" alt="no img"/>
+          <img src={Whale} alt="no img"/>
         </div>
 
         {/* visualisation */}
@@ -75,7 +77,7 @@ const LandingPage=()=>{
             </div>
 </div>
 <div className="home-image-container">
-          <img src="src/assets/Crab.png" alt="no img"/>
+          <img src={Crab} alt="no img"/>
         </div>
             <div className="Doughnut-wrapper">
           

@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from "../PageComponents/Navbar.jsx";
+import Vector from "../assets/Vector.png";
 
 const AboutPage=()=> {
   return (
@@ -16,7 +17,7 @@ const AboutPage=()=> {
         </p>
       </div>
       <div className="image-container">
-        <img src="src/assets/Vector.png" alt="not found" className="bottom-image" />
+        <img src={Vector} alt="not found" className="bottom-image" />
       </div>
        
     </div>
