@@ -2,6 +2,8 @@
 import Navbar from "../PageComponents/Navbar.jsx";
 import PromptBar from "../PageComponents/promptbar.jsx";
 import React, { useState } from "react";
+import fishnew from "../assets/fishnew.png";
+import fishnewInverted from "../assets/fishnewinverted.png";
 
 
 const QueryPage=()=> {
@@ -13,7 +15,7 @@ const QueryPage=()=> {
       <Navbar/>
       <div className="query-Img">
         <div className="home-image-container">
-          <img src="src/assets/fishnew.png" alt="no img"/>
+          <img src={fishnew} alt="no img"/>
         </div>
         
         <div className="ocean-theme" >
@@ -21,7 +23,7 @@ const QueryPage=()=> {
   <p>Type your question and let our intelligent system dive deep for insights.</p>
         </div>
         <div className="home-image-container">
-          <img src="src/assets/fishnewinverted.png" alt="no img"/>
+          <img src={fishnewInverted} alt="no img"/>
         </div>
 
       </div>
